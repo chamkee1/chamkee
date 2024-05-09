@@ -111,10 +111,13 @@ section img {
 
 .about-text {
     max-width: 50%;
+    position: relative;
 }
 
-.about-content h2 {
-    margin-left: auto; /* Move heading to the right of the content */
+.about-text h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .mission-content {
