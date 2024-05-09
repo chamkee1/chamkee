@@ -63,7 +63,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 10px; /* 減少間距使導航文字完全顯示 */
 }
 
 nav ul li a {
