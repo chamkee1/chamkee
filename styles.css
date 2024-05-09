@@ -29,7 +29,7 @@ header {
 }
 
 .logo img {
-    height: 50px;
+    height: 70px; /* 調整LOGO大小 */
     margin-right: 20px;
 }
 
@@ -59,6 +59,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: flex-start; /* 向左移動導航菜單 */
 }
 
 nav ul li {
@@ -83,7 +84,7 @@ main {
 section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 1200px; /* 放大整個板塊 */
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -106,6 +107,7 @@ section img {
 
 .about-content img {
     max-width: 50%;
+    width: 50%; /* 放大圖片 */
     margin-right: 20px;
 }
 
@@ -115,9 +117,7 @@ section img {
 }
 
 .about-text h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-left: 20px; /* 向右移動 "關於湛記" 標題 */
 }
 
 .mission-content {
