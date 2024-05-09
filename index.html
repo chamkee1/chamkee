@@ -2,94 +2,80 @@
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <title>湛記機械工程(香港)有限公司</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            border-bottom: 1px solid #ccc;
-        }
-        header .logo {
-            display: flex;
-            align-items: center;
-        }
-        header .logo img {
-            max-height: 50px;
-            margin-right: 10px;
-        }
-        header nav a {
-            margin: 0 15px;
-            color: #333;
-            text-decoration: none;
-        }
-        main {
-            padding: 80px 20px 20px 20px; /* 考慮到固定 header 的高度 */
-            background-color: #f0f0f0;
-        }
-        section {
-            margin: 20px 0;
-            background-color: #e0e0e0;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        section img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>湛記機械工程(香港)有限公司</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="image/LOGO.png" alt="公司標誌">
-            <div>
-                <h1>湛記機械工程(香港)有限公司</h1>
-                <p>車身安裝及工程</p>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/your-logo-file.jpg" alt="湛記機械工程標誌">
+                <div class="company-info">
+                    <h1>Cham Kee</h1>
+                    <h2>湛記</h2>
+                    <p>車身安裝及工程</p>
+                </div>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">關於湛記</a></li>
+                    <li><a href="#mission">我們的任務</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                    <li><a href="#products">產品介紹</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <a href="index.html">首頁</a>
-            <a href="about.html">關於湛記</a>
-            <a href="services.html">核心價值</a>
-            <a href="contact.html">聯絡我們</a>
-            <a href="products.html">產品介紹</a>
-        </nav>
     </header>
     <main>
-        <section>
+        <section id="about" class="light-green-bg">
             <h2>關於湛記</h2>
-            <p>湛記機械工程(香港)有限公司，簡稱「湛記」，於 2021 年成立，集合了一批資深環保和工程專業人士。我們的管理團隊擁有豐富的行業經驗和前瞻性的戰略眼光，專注於為環保服務行業——包括街道清潔、廢物收集和綜合清潔服務——融入新能源科技。我們的創新解決方案，如太陽能垃圾壓縮斗（太陽能斗）和太陽能濾水斗，旨在為客戶打造一個高品質、安全及環保的工作環境。湛記承諾，通過持續創新，為促進環境可持續發展做出貢獻。</p>
-            <img src="image/19c0a057-1364-44b9-b894-95296cc6d90f.jpeg" alt="公司圖片">
+            <div class="about-content">
+                <img src="images/your-about-image.jpg" alt="關於湛記">
+                <div class="about-text">
+                    <p>湛記機械工程(香港)有限公司，簡稱「湛記」。於2021年成立，集結了一批資深環保和工程專業人士。我們的管理團隊擁有豐富的行業經驗和前瞻性的戰略眼光，專注於為環保服務行業——包括街道清潔、廢物收集和綜合清潔服務——融入新能源科技。我們的創新解決方案，如太陽能垃圾壓縮斗(太陽能電斗)和太陽能灑水車，旨在為客戶打造一個高品質、安全及環保的工作環境。湛記承諾，通過持續創新，為促進環境可持續發展做出貢獻。</p>
+                    <h3>業務範圍</h3>
+                    <p>湛記機械工程專精於車身定制工程和維修服務，涉獵廣泛的車輛類型，包括壓縮式垃圾車、多樣化垃圾斗、專業水車、功能性尾板車、靈活勾車和夾車等。我們在中國設有自家車廠，不僅提供標準化的車斗定制服務，還能按客戶需求融入新能源科技，展現對創新的不懈追求。</p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>業務範圍</h2>
-            <p>湛記機械工程專精於車身定制工程和維修服務，涉獵廣泛的車輛類型，包括壓縮式垃圾車、多樣化垃圾斗、專業水車、功能性尾板車、靈活勾車和夾車等。我們在中國設有自家車廠，不僅提供標準化的車斗定制服務，還能按客戶需求融入新能源科技，展現對創新的不懈追求。我們的產品線特別強調新能源科技的應用，如利用太陽能的垃圾壓縮斗和水車，以及其他客製化設備，包括洗動式反桶架和流動式打包機。通過這些高效能且環保的技術，我們幫助客戶降低對傳統能源的依賴，推動其業務邁向綠色可持續發展。湛記，不僅是您的服務提供者，更是您實現創新想法的合作夥伴。無論您希望將車輛升級為新能源動力，還是整合最新科技，我們的專業團隊都致力於將您的願景轉化為實際的解決方案。</p>
+        <section id="mission">
+            <h2>我們的任務是照管你的車輛。</h2>
+            <div class="mission-content">
+                <div class="mission-item">
+                    <img src="images/quality-icon.jpg" alt="品質">
+                    <h3>品質</h3>
+                    <p>卓越的服務標準。確保您的車身安裝和維修工作達到高標準，以滿足客戶的期望。這包括使用優質的材料、精湛的工藝和可靠的服務。</p>
+                </div>
+                <div class="mission-item">
+                    <img src="images/safety-icon.jpg" alt="安全">
+                    <h3>安全</h3>
+                    <p>嚴格的安全規範。車輛安全是您業務的首要任務。確保您的工作不僅符合法律標準，還能保護駕駛員和乘客的生命和財產安全。</p>
+                </div>
+                <div class="mission-item">
+                    <img src="images/environment-icon.jpg" alt="環保">
+                    <h3>環保</h3>
+                    <p>新能源的創新應用。我們積極將太陽能等新能源技術應用於環境清潔服務中，如太陽能垃圾壓縮斗和太陽能灑水車，從而減少對傳統能源的依賴和碳排放。</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>聯絡我們</h2>
+            <p>湛記機械工程(香港)有限公司<br>元朗大樹下西路LOT 1213A段<br>星期一至六 9:00AM-6:00PM</p>
+            <p>電話: 24483702<br>電子郵件: chamkeemachineryltd@gmail.com</p>
+            <form>
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">電子郵件:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">訊息:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="提交">
+            </form>
         </section>
     </main>
     <footer>
-        <p>聯絡我們: <a href="mailto:info@cham-kee.com">info@cham-kee.com</a></p>
+        <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
     </footer>
 </body>
 </html>
