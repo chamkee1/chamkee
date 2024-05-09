@@ -106,11 +106,15 @@ section img {
 
 .about-content img {
     max-width: 50%;
-    margin-left: 20px; /* Moved image to the left */
+    margin-right: 20px;
 }
 
 .about-text {
     max-width: 50%;
+}
+
+.about-content h2 {
+    margin-left: auto; /* Move heading to the right of the content */
 }
 
 .mission-content {
@@ -187,9 +191,4 @@ form input[type="submit"]:hover {
         max-width: 80%;
         margin-bottom: 20px;
     }
-}
-
-h2 {
-    text-align: right; /* Move heading to the right */
-    margin-right: 20px; /* Add margin to the right */
 }
