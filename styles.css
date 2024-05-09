@@ -1,26 +1,17 @@
 /* styles.css */
+
+/* Existing styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 .logo {
@@ -28,76 +19,42 @@ header {
     align-items: center;
 }
 
+/* 放大LOGO */
 .logo img {
-    height: 70px; /* 調整LOGO大小 */
-    margin-right: 20px;
+    width: 150px; /* 調整大小 */
+    height: auto;
 }
 
 .company-info {
-    text-align: left;
-}
-
-.company-info h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.company-info h2 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #666;
-}
-
-.company-info p {
-    margin: 5px 0 0;
-    font-size: 1em;
-    color: #666;
+    margin-left: 10px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: flex-start; /* 向左移動導航菜單 */
+    list-style: none;
 }
 
 nav ul li {
-    margin-left: 10px; /* 減少間距使導航文字完全顯示 */
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 10px 0;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
+/* 將導航欄向左移動 */
+nav {
+    margin-left: -20px; /* 調整這個值以達到所需效果 */
 }
 
 main {
-    padding-top: 120px; /* Adjusted to account for fixed header */
-}
-
-section {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px; /* 放大整個板塊 */
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
 }
 
 .light-green-bg {
-    background-color: #e0f7e0;
+    background-color: #e6ffe6;
+}
+
+/* 將紫色圈住的整個板塊放大 */
+.full-page {
+    width: 100%;
+    height: 100vh; /* 佔滿一整個頁面 */
 }
 
 .about-content {
@@ -106,92 +63,37 @@ section img {
 }
 
 .about-content img {
-    max-width: 50%;
-    width: 50%; /* 放大圖片 */
+    width: 300px;
+    height: auto;
     margin-right: 20px;
 }
 
 .about-text {
-    max-width: 50%;
-    position: relative;
+    max-width: 800px;
 }
 
-.about-text h2 {
-    margin-left: 20px; /* 向右移動 "關於湛記" 標題 */
+/* 將“關於湛記”向右移動，使其與下面內容對齊 */
+.aligned-heading {
+    margin-left: 50px; /* 調整這個值以達到所需效果 */
 }
 
 .mission-content {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 20px;
+    justify-content: space-between;
 }
 
 .mission-item {
-    max-width: 30%;
+    width: 30%;
+    text-align: center;
 }
 
-.mission-item img {
-    max-width: 100px;
-    height: auto;
+.contact {
+    text-align: center;
 }
 
 footer {
-    background-color: #ffffff;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-top: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-form input[type="submit"] {
-    background-color: #343a40;
-    color: white;
-    border: none;
-    padding: 15px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #495057;
-}
-
-@media screen and (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-content img,
-    .about-text {
-        max-width: 100%;
-        margin-right: 0;
-    }
-
-    .mission-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mission-item {
-        max-width: 80%;
-        margin-bottom: 20px;
-    }
+    padding: 10px 0;
 }
