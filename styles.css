@@ -106,7 +106,7 @@ section img {
 
 .about-content img {
     max-width: 50%;
-    margin-right: 20px;
+    margin-left: 20px; /* Moved image to the left */
 }
 
 .about-text {
@@ -165,86 +165,31 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #495057;
 }
-``### 更新的 HTML 結構
-```html
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>湛記機械工程(香港)有限公司</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="images/your-logo-file.jpg" alt="湛記機械工程標誌">
-                <div class="company-info">
-                    <h1>Cham Kee</h1>
-                    <h2>湛記</h2>
-                    <p>車身安裝及工程</p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">關於湛記</a></li>
-                    <li><a href="#mission">我們的任務</a></li>
-                    <li><a href="#contact">聯絡我們</a></li>
-                    <li><a href="#products">產品介紹</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="about" class="light-green-bg">
-            <h2>關於湛記</h2>
-            <div class="about-content">
-                <img src="images/your-about-image.jpg" alt="關於湛記">
-                <div class="about-text">
-                    <p>湛記機械工程(香港)有限公司，簡稱「湛記」。於2021年成立，集結了一批資深環保和工程專業人士。我們的管理團隊擁有豐富的行業經驗和前瞻性的戰略眼光，專注於為環保服務行業——包括街道清潔、廢物收集和綜合清潔服務——融入新能源科技。我們的創新解決方案，如太陽能垃圾壓縮斗(太陽能電斗)和太陽能灑水車，旨在為客戶打造一個高品質、安全及環保的工作環境。湛記承諾，通過持續創新，為促進環境可持續發展做出貢獻。</p>
-                    <h3>業務範圍</h3>
-                    <p>湛記機械工程專精於車身定制工程和維修服務，涉獵廣泛的車輛類型，包括壓縮式垃圾車、多樣化垃圾斗、專業水車、功能性尾板車、靈活勾車和夾車等。我們在中國設有自家車廠，不僅提供標準化的車斗定制服務，還能按客戶需求融入新能源科技，展現對創新的不懈追求。</p>
-                </div>
-            </div>
-        </section>
-        <section id="mission">
-            <h2>我們的任務是照管你的車輛。</h2>
-            <div class="mission-content">
-                <div class="mission-item">
-                    <img src="images/quality-icon.jpg" alt="品質">
-                    <h3>品質</h3>
-                    <p>卓越的服務標準。確保您的車身安裝和維修工作達到高標準，以滿足客戶的期望。這包括使用優質的材料、精湛的工藝和可靠的服務。</p>
-                </div>
-                <div class="mission-item">
-                    <img src="images/safety-icon.jpg" alt="安全">
-                    <h3>安全</h3>
-                    <p>嚴格的安全規範。車輛安全是您業務的首要任務。確保您的工作不僅符合法律標準，還能保護駕駛員和乘客的生命和財產安全。</p>
-                </div>
-                <div class="mission-item">
-                    <img src="images/environment-icon.jpg" alt="環保">
-                    <h3>環保</h3>
-                    <p>新能源的創新應用。我們積極將太陽能等新能源技術應用於環境清潔服務中，如太陽能垃圾壓縮斗和太陽能灑水車，從而減少對傳統能源的依賴和碳排放。</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>聯絡我們</h2>
-            <p>湛記機械工程(香港)有限公司<br>元朗大樹下西路LOT 1213A段<br>星期一至六 9:00AM-6:00PM</p>
-            <p>電話: 24483702<br>電子郵件: chamkeemachineryltd@gmail.com</p>
-            <form>
-                <label for="name">姓名:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">電子郵件:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">訊息:</label>
-                <textarea id="message" name="message" required></textarea>
-                <input type="submit" value="提交">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img,
+    .about-text {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .mission-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-item {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+h2 {
+    text-align: right; /* Move heading to the right */
+    margin-right: 20px; /* Add margin to the right */
+}
