@@ -257,6 +257,33 @@ form input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info h1 {
+        font-size: 1.2em;
+    }
+
+    .company-info h2 {
+        font-size: 1em;
+    }
+
+    .company-info p {
+        font-size: 0.9em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
     .about-content {
         flex-direction: column;
         align-items: center;
