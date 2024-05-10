@@ -105,7 +105,7 @@ section img {
 .section-title {
     font-style: italic;
     font-size: 2em;
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
 }
 
@@ -117,6 +117,7 @@ section img {
 .about-content img {
     max-width: 50%;
     margin-right: 20px;
+    margin-top: -50px; /* Move image up */
 }
 
 .about-text {
