@@ -116,25 +116,30 @@ section img {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .contact-info {
-    max-width: 40%;
+    max-width: 30%;
     color: white; /* Ensure text is visible on background */
 }
 
 .contact-form-map {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 65%;
+    flex-wrap: wrap;
 }
 
 .contact-form {
     max-width: 45%;
+    flex-grow: 1;
+    margin-right: 20px;
 }
 
 .map-container {
     max-width: 50%;
+    flex-grow: 1;
 }
 
 .about-title {
