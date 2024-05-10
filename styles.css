@@ -129,6 +129,9 @@ section img {
 
 .contact-info {
     max-width: 30%;
+    background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+    padding: 20px; /* Add padding to ensure text is not touching edges */
+    border-radius: 10px; /* Add border radius for smoother edges */
     color: white; /* Ensure text is visible on background */
 }
 
@@ -143,10 +146,14 @@ section img {
     max-width: 45%;
     flex-grow: 1;
     margin-right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+    padding: 20px; /* Add padding to ensure text is not touching edges */
+    border-radius: 10px; /* Add border radius for smoother edges */
+    color: white; /* Ensure text is visible on background */
 }
 
 .map-container {
-    max-width: 60%;
+    max-width: 50%;
     flex-grow: 1;
 }
 
@@ -223,6 +230,7 @@ form {
 form label {
     margin-top: 10px;
     font-weight: bold;
+    color: white; /* Ensure label text is visible */
 }
 
 form input, form textarea {
@@ -230,6 +238,8 @@ form input, form textarea {
     margin-top: 5px;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form input[type="submit"] {
@@ -239,6 +249,7 @@ form input[type="submit"] {
     padding: 15px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 form input[type="submit"]:hover {
