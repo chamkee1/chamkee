@@ -289,8 +289,9 @@ form input[type="submit"]:hover {
 
 .slideshow-container {
     position: relative;
-    max-width: 100%;
+    max-width: 80%; /* Adjust the width to be smaller */
     margin: auto;
+    border: none; /* Remove border */
 }
 
 .mySlides {
@@ -334,4 +335,8 @@ img {
 
 .dot:hover {
     cursor: pointer;
+}
+
+.dots-container {
+    text-align: center;
 }
