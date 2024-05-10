@@ -118,6 +118,14 @@ section img {
     padding-left: 0px; /* Add padding to ensure alignment */
 }
 
+.mission-title {
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 0px; /* Add padding to ensure alignment */
+}
+
 .about-content {
     display: flex;
     align-items: flex-start;
