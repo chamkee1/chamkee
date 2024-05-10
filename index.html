@@ -19,6 +19,7 @@
             </div>
             <nav>
                 <ul>
+                    <li><a href="#slideshow">幻燈片</a></li>
                     <li><a href="#about">關於湛記</a></li>
                     <li><a href="#mission">我們的任務</a></li>
                     <li><a href="#contact">聯絡我們</a></li>
@@ -28,6 +29,33 @@
         </div>
     </header>
     <main>
+        <section id="slideshow">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image/自家廠.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/掃地車.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/流動打包機2.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/垃圾車.jpeg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/水車2.jpeg" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
         <section id="about" class="light-green-bg">
             <div class="about-content">
                 <img src="image/19c0a057-1364-44b9-b894-95296cc6d90f.jpeg" alt="關於湛記">
@@ -65,8 +93,8 @@
             <h2 class="contact-title">聯絡我們</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>湛記機械工程(香港)有限公司<br>營業地址：元朗大樹下西路LOT 1213A段<br>營業時間：星期一至六 9:00AM-6:00PM</p>
-<p>電話：24483702<br>電子郵件：chamkeemachineryltd@gmail.com</p>
+                    <p>湛記機械工程(香港)有限公司<br>元朗大樹下西路LOT 1213A段<br>星期一至六 9:00AM-6:00PM</p>
+                    <p>電話: 24483702<br>電子郵件: chamkeemachineryltd@gmail.com</p>
                 </div>
                 <div class="contact-form-map">
                     <div class="contact-form">
@@ -90,5 +118,26 @@
     <footer>
         <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
     </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
