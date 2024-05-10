@@ -99,7 +99,10 @@ section img {
 }
 
 .light-green-bg {
-    background-color: #e0f7e0;
+    background-image: url('image/綠沙背.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-title {
