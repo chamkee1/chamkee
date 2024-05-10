@@ -102,6 +102,13 @@ section img {
     background-color: #e0f7e0;
 }
 
+.section-title {
+    font-style: italic;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .about-content {
     display: flex;
     align-items: flex-start;
@@ -115,12 +122,7 @@ section img {
 .about-text {
     max-width: 50%;
     position: relative;
-}
-
-.about-text h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    font-size: 1.2em; /* Increase font size for text */
 }
 
 .mission-content {
@@ -132,6 +134,7 @@ section img {
 
 .mission-item {
     max-width: 30%;
+    font-size: 1.2em; /* Increase font size for text */
 }
 
 .mission-item img {
