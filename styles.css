@@ -112,6 +112,31 @@ section img {
     background-repeat: no-repeat; /* Prevent the background from repeating */
 }
 
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    max-width: 40%;
+    color: white; /* Ensure text is visible on background */
+}
+
+.contact-form-map {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form {
+    max-width: 45%;
+}
+
+.map-container {
+    max-width: 50%;
+}
+
 .about-title {
     font-style: italic;
     font-size: 2em;
@@ -226,6 +251,14 @@ form input[type="submit"]:hover {
 
     .mission-item {
         max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact-form, .map-container {
+        max-width: 100%;
         margin-bottom: 20px;
     }
 }
