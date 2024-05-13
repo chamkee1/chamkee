@@ -24,7 +24,7 @@
                     <li><a href="index.html#mission">我們的任務</a></li>
                     <li><a href="index.html#contact">聯絡我們</a></li>
                     <li class="dropdown">
-                        <a href="index.html#products" class="dropbtn">產品介紹</a>
+                        <a href="javascript:void(0)" class="dropbtn">產品介紹</a>
                         <div class="dropdown-content">
                             <a href="traditional-products.html">傳統產品</a>
                             <a href="new-energy.html">新能源科技</a>
@@ -35,9 +35,12 @@
         </div>
     </header>
     <main>
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="請輸入關鍵字">
+            <button onclick="performSearch()">搜尋</button>
+        </section>
         <section id="traditional-products" class="light-green-bg-2">
             <div class="products-content">
-                <!-- 在這裡添加您的產品內容 -->
                 <h2>傳統產品</h2>
                 <p>在這裡描述傳統產品的詳情。</p>
             </div>
@@ -46,5 +49,14 @@
     <footer>
         <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
     </footer>
+
+    <script>
+        function performSearch() {
+            const query = document.getElementById('search-input').value;
+            if (query) {
+                window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
+            }
+        }
+    </script>
 </body>
 </html>
