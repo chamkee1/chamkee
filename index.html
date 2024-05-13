@@ -24,7 +24,7 @@
                     <li><a href="#mission">我們的任務</a></li>
                     <li><a href="#contact">聯絡我們</a></li>
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">產品介紹</a>
+                        <a href="#products" class="dropbtn">產品介紹</a>
                         <div class="dropdown-content">
                             <a href="traditional-products.html">傳統產品</a>
                             <a href="new-energy.html">新能源科技</a>
@@ -35,25 +35,43 @@
         </div>
     </header>
     <main>
-        <div id="slideshow">
-            <img src="image/自家廠.jpeg" alt="自家廠">
-            <img src="image/掃地車.jpeg" alt="掃地車">
-            <img src="image/流動打包機2.jpeg" alt="流動打包機2">
-            <img src="image/垃圾車.jpeg" alt="垃圾車">
-            <img src="image/水車2.jpeg" alt="水車2">
-        </div>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="請輸入關鍵字">
-            <button onclick="performSearch()">搜尋</button>
-        </div>
+        <section id="slideshow">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="image/自家廠.jpeg" class="slide-image" alt="自家廠">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/掃地車.jpeg" class="slide-image" alt="掃地車">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/流動打包機2.jpeg" class="slide-image" alt="流動打包機">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/垃圾車.jpeg" class="slide-image" alt="垃圾車">
+                </div>
+                <div class="mySlides fade">
+                    <img src="image/水車2.jpeg" class="slide-image" alt="水車">
+                </div>
+            </div>
+            <br>
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
         <section id="about" class="light-green-bg">
-            <h2 class="about-title">關於湛記</h2>
             <div class="about-content">
-                <img src="image/公司照片.jpeg" alt="公司照片">
+                <img src="image/19c0a057-1364-44b9-b894-95296cc6d90f.jpeg" alt="關於湛記">
                 <div class="about-text">
-                    <p>湛記機械工程(香港)有限公司，簡稱「湛記」。於2021年成立，集結了一批資深環保和工程專業人士。</p>
-                    <p>我們的管理團隊擁有豐富的行業經驗和前瞻性的戰略眼光，專注於為環保服務行業——包括街道清潔、廢物收集和綜合清潔服務——融入新能源科技。</p>
-                    <p>我們的創新解決方案，如太陽能垃圾壓縮斗(太陽能電斗)和太陽能灑水車，旨在為客戶打造一個高品質、安全及環保的工作環境。湛記承諾，通過持續創新，為促進環境可持續發展做出貢獻。</p>
+                    <h2 class="about-title">關於湛記</h2>
+                    <p>湛記機械工程(香港)有限公司，簡稱「湛記」。於2021年成立，集結了一批資深環保和工程專業人士。我們的管理團隊擁有豐富的行業經驗和前瞻性的戰略眼光，專注於為環保服務行業——包括街道清潔、廢物收集和綜合清潔服務——融入新能源科技。我們的創新解決方案，如太陽能垃圾壓縮斗(太陽能電斗)和太陽能灑水車，旨在為客戶打造一個高品質、安全及環保的工作環境。湛記承諾，通過持續創新，為促進環境可持續發展做出貢獻。</p>
+                    <h3 class="scope-title">業務範圍</h3>
+                    <p>湛記機械工程專精於車身定制工程和維修服務，涉獵廣泛的車輛類型，包括壓縮式垃圾車、多樣化垃圾斗、專業水車、功能性尾板車、靈活勾車和夾車等。我們在中國設有自家車廠，不僅提供標準化的車斗定制服務，還能按客戶需求融入新能源科技，展現對創新的不懈追求。</p>
+                    <p>我們的產品線特別強調新能源科技的應用，如利用太陽能的垃圾壓縮斗和水車，以及其他客製化設備，包括洗動式反桶架和流動式打包機。通過這些高效能且環保的技術，我們幫助客戶降低對傳統能源的依賴，推動其業務邁向綠色可持續發展。</p>
+                    <p>湛記，不僅是您的服務提供者，更是您實現創新想法的合作夥伴。無論您希望將車輛升級為新能源動力，還是整合最新科技，我們的專業團隊都致力於將您的願景轉化為實際的解決方案。</p>
                 </div>
             </div>
         </section>
@@ -61,16 +79,19 @@
             <h2 class="mission-title">我們的任務是照管你的車輛。</h2>
             <div class="mission-content">
                 <div class="mission-item">
-                    <img src="image/任務1.jpeg" alt="任務1">
-                    <p>任務描述1</p>
+                    <img src="image/螢幕擷取畫面 2024-03-25 113952.png" alt="品質">
+                    <h3>品質</h3>
+                    <p>卓越的服務標準。確保您的車身安裝和維修工作達到高標準，以滿足客戶的期望。這包括使用優質的材料、精湛的工藝和可靠的服務。</p>
                 </div>
                 <div class="mission-item">
-                    <img src="image/任務2.jpeg" alt="任務2">
-                    <p>任務描述2</p>
+                    <img src="image/Caution_sign_used_on_roads_pn.svg.png" alt="安全">
+                    <h3>安全</h3>
+                    <p>嚴格的安全規範。車輛安全是您業務的首要任務。確保您的工作不僅符合法律標準，還能保護駕駛員和乘客的生命和財產安全。</p>
                 </div>
                 <div class="mission-item">
-                    <img src="image/任務3.jpeg" alt="任務3">
-                    <p>任務描述3</p>
+                    <img src="image/螢幕擷取畫面 2024-03-25 114107.png" alt="環保">
+                    <h3>環保</h3>
+                    <p>新能源的創新應用。我們積極將太陽能等新能源技術應用於環境清潔服務中，如太陽能垃圾壓縮斗和太陽能灑水車，從而減少對傳統能源的依賴和碳排放。</p>
                 </div>
             </div>
         </section>
@@ -78,24 +99,23 @@
             <h2 class="contact-title">聯絡我們</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p>湛記機械工程(香港)有限公司</p>
-                    <p>元朗大樹下西路LOT 1213A段</p>
-                    <p>星期一至六 9:00AM-6:00PM</p>
-                    <p>電話: 24483702</p>
-                    <p>電子郵件: chamkeemachineryltd@gmail.com</p>
+                    <p>湛記機械工程(香港)有限公司<br>元朗大樹下西路LOT 1213A段<br>星期一至六 9:00AM-6:00PM</p>
+                    <p>電話: 24483702<br>電子郵件: chamkeemachineryltd@gmail.com</p>
                 </div>
                 <div class="contact-form-map">
-                    <form class="contact-form">
-                        <label for="name">姓名:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="email">電子郵件:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="message">訊息:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <input type="submit" value="提交">
-                    </form>
+                    <div class="contact-form">
+                        <form>
+                            <label for="name">姓名:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="email">電子郵件:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="message">訊息:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <input type="submit" value="提交">
+                        </form>
+                    </div>
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.1684353467404!2d114.03384177475282!3d22.422685338449288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fb6bb05c16d7%3A0x3d4ce98ad6cadf66!2z5rmb6KiY5qmf5qKw5bel56iLKOmmmea4rynmnInpmZDlhazlj7g!5e0!3m2!1szh-TW!2shk!4v1715321109403!5m2!1szh-TW!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.1684353467404!2d114.03384177475282!3d22.422685338449288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fb6bb05c16d7%3A0x3d4ce98ad6cadf66!2z5rmb6KiY5qmf5qKw5bel56iLKOmmmea4rynmnInpmZDlhazlj7g!5e0!3m2!1szh-TW!2shk!4v1715321109403!5m2!1szh-TW!2shk" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -104,33 +124,25 @@
     <footer>
         <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
     </footer>
-
     <script>
-        // Slideshow script
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('#slideshow img');
-        const totalSlides = slides.length;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = (i === index) ? 'block' : 'none';
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            showSlide(currentSlide);
-        }
-
-        setInterval(nextSlide, 3000); // Change slide every 3 seconds
-        showSlide(currentSlide);
-
-        // Search function
-        function performSearch() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                window.location.href = `search-results.html?query=${query}`;
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
             }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
     </script>
 </body>
