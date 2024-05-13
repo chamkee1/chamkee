@@ -88,6 +88,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     background-color: white;
+    min-width: 160px; /* Minimum width for dropdown content */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
