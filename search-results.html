@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜尋結果 - 湛記機械工程(香港)有限公司</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="image/LOGO.png" alt="湛記機械工程標誌">
+                <div class="company-info">
+                    <h1>Cham Kee</h1>
+                    <h2>湛記</h2>
+                    <p>車身安裝及工程</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#slideshow">幻燈片</a></li>
+                    <li><a href="index.html#about">關於湛記</a></li>
+                    <li><a href="index.html#mission">我們的任務</a></li>
+                    <li><a href="index.html#contact">聯絡我們</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">產品介紹</a>
+                        <div class="dropdown-content">
+                            <a href="traditional-products.html">傳統產品</a>
+                            <a href="new-energy.html">新能源科技</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="search-results" class="light-green-bg-2">
+            <div class="products-content">
+                <h2>搜尋結果</h2>
+                <div id="results-container">
+                    <!-- 在這裡顯示搜索結果 -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            const resultsContainer = document.getElementById('results-container');
+
+            if (query) {
+                // 在這裡執行你的搜索邏輯
+                // 將搜索結果添加到 resultsContainer
+                resultsContainer.innerHTML = `<p>搜尋結果：${query}</p>`;
+                // 模擬搜索結果
+                const sampleResults = [
+                    '結果 1',
+                    '結果 2',
+                    '結果 3'
+                ];
+                sampleResults.forEach(result => {
+                    const resultElement = document.createElement('p');
+                    resultElement.textContent = result;
+                    resultsContainer.appendChild(resultElement);
+                });
+            } else {
+                resultsContainer.innerHTML = '<p>未提供關鍵字</p>';
+            }
+        });
+    </script>
+</body>
+</html>
