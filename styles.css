@@ -131,6 +131,13 @@ section img {
     background-repeat: no-repeat; /* Prevent the background from repeating */
 }
 
+.light-green-bg-2 {
+    background-image: url('image/綠沙背2.png'); /* Set background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+}
+
 .contact-bg {
     background-image: url('image/背景3.png'); /* Set background image */
     background-size: cover; /* Ensure the background covers the entire section */
