@@ -35,28 +35,28 @@
         </div>
     </header>
     <main>
-        <section class="search-bar">
-            <input type="text" id="search-input" placeholder="請輸入關鍵字">
-            <button onclick="performSearch()">搜尋</button>
-        </section>
         <section id="traditional-products" class="light-green-bg-2">
             <div class="products-content">
                 <h2>傳統產品</h2>
-                <p>在這裡描述傳統產品的詳情。</p>
+                <div class="product-grid">
+                    <a href="product-details-1.html">
+                        <img src="image/垃圾車.jpeg" alt="壓縮垃圾車">
+                        <p>壓縮垃圾車</p>
+                    </a>
+                    <a href="product-details-2.html">
+                        <img src="image/勾車.jpeg" alt="勾斗車">
+                        <p>勾斗車</p>
+                    </a>
+                    <a href="product-details-3.html">
+                        <img src="image/水車2.jpeg" alt="水缸洗街車">
+                        <p>水缸洗街車</p>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 湛記機械工程(香港)有限公司. All rights reserved.</p>
     </footer>
-
-    <script>
-        function performSearch() {
-            const query = document.getElementById('search-input').value;
-            if (query) {
-                window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
-            }
-        }
-    </script>
 </body>
 </html>
