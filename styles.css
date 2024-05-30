@@ -464,3 +464,14 @@ form input[type="submit"]:hover {
 .product-item a:hover p {
     text-decoration: underline;
 }
+
+.thank-you-section {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.thank-you-title {
+    font-size: 2em;
+    color: #333;
+}
+
