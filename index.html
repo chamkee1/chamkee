@@ -105,7 +105,7 @@
                 <div class="contact-form-map">
                     <div class="contact-form">
                         
-<form action="https://formspree.io/f/mayrgwaw?_next=http://cham-kee.com/thank-you.html" method="POST">
+<form id="contact-form" action="https://formspree.io/f/mayrgwaw" method="POST">
     <label for="name">姓名:</label>
     <input type="text" id="name" name="name" required>
     <label for="email">電子郵件:</label>
@@ -115,7 +115,29 @@
     <input type="submit" value="提交">
 </form>
 
-                    
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent the default form submission
+        const form = event.target;
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = 'http://cham-kee.com/thank-you.html';  // Redirect to the thank you page
+            } else {
+                alert('Form submission failed.');
+            }
+        }).catch(error => {
+            alert('There was a problem submitting the form.');
+        });
+    });
+</script>
+
                     </div>
                     <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.1684353467404!2d114.03384177475282!3d22.422685338449288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fb6bb05c16d7%3A0x3d4ce98ad6cadf66!2z5rmb6KiY5qmf5qKw5bel56iLKOmmmea4rynmnInpmZDlhazlj7g!5e0!3m2!1szh-TW!2shk!4v1715321109403!5m2!1szh-TW!2shk" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
