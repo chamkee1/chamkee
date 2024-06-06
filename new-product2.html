@@ -3,8 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>太陽能水缸洗街車 - 新能源科技 - 湛記機械工程(香港)有限公司</title>
+    <title>太陽能電斗 - 新能源科技 - 湛記機械工程(香港)有限公司</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .product-gallery img {
+            flex: 1 1 45%;
+            max-width: 45%;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        .product-details {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-details h1, .product-details h2, .product-details h3, .product-details h4, .product-details p {
+            margin-bottom: 15px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            flex: 1 1 calc(33% - 20px);
+            background: rgba(240, 240, 240, 0.9);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .feature-box h4 {
+            margin-bottom: 10px;
+        }
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .spec-table th, .spec-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .spec-table th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,7 +94,60 @@
     </header>
     <main>
         <section class="light-green-bg-2">
-            <!-- 這裡是產品詳細介紹的內容區域 -->
+            <div class="product-details">
+                <h1>太陽能電斗</h1>
+                <h2>創新高效的垃圾處理設備</h2>
+                <p>我們的太陽能電斗採用先進的太陽能充電技術，結合比亞迪刀片電池，提供強大且持久的電力支援，確保在各種環境下的穩定運行。</p>
+                <table class="spec-table">
+                    <tr>
+                        <th>項目</th>
+                        <th>參數</th>
+                    </tr>
+                    <tr>
+                        <td>容量 (立方米)</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>電池種類</td>
+                        <td>比亞迪刀片電池</td>
+                    </tr>
+                    <tr>
+                        <td>充電方式</td>
+                        <td>太陽能充電</td>
+                    </tr>
+                    <tr>
+                        <td>保養期限</td>
+                        <td>6個月 (泵油除外，不包括人為損壞)</td>
+                    </tr>
+                </table>
+                <div class="features">
+                    <div class="feature-box">
+                        <h4>節能環保</h4>
+                        <p>採用太陽能充電技術，減少碳排放，助力城市環保目標的實現。</p>
+                        <p>備用220V市電充電介面，保證持續運行。</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>高效運行</h4>
+                        <p>配備比亞迪刀片電池，提供強大且持久的電力支援，確保穩定運行。</p>
+                        <p>保養期內包打牛油及清斗頭垃圾，減少維護成本。</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>可靠性高</h4>
+                        <p>保養6個月，保證設備長期穩定運行。</p>
+                        <p>使用高品質材料，確保耐用性和可靠性。</p>
+                    </div>
+                </div>
+                <h3>適用場景</h3>
+                <p>城市垃圾處理：適用於城市垃圾收集和運輸。</p>
+                <p>公共場所：公園、廣場等公共場所的垃圾處理。</p>
+                <p>工業區域：工廠、倉庫及工業園區的垃圾管理。</p>
+            </div>
+            <div class="product-gallery">
+                <img src="image/太陽能電斗1.jpeg" alt="太陽能電斗1">
+                <img src="image/太陽能電斗2.jpeg" alt="太陽能電斗2">
+                <img src="image/太陽能電斗3.jpeg" alt="太陽能電斗3">
+                <img src="image/太陽能電斗4.jpeg" alt="太陽能電斗4">
+            </div>
         </section>
     </main>
     <footer>
