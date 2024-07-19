@@ -38,6 +38,27 @@
         .product-details a:hover {
             text-decoration: underline;
         }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .info-table th, .info-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .info-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .info-table td {
+            background-color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -78,7 +99,28 @@
                 </div>
                 <div class="product-details">
                     <h2>基本信息</h2>
-                    <p>我們公司在香港代理三一集團的叉車，這些叉車具有高效、可靠、耐用的特點，專為提升和搬運重物設計，適用於各種倉庫和工業場景。</p>
+                    <table class="info-table">
+                        <tr>
+                            <th>項目</th>
+                            <th>參數</th>
+                        </tr>
+                        <tr>
+                            <td>容量 (立方米)</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>電池種類</td>
+                            <td>比亞迪刀片電池</td>
+                        </tr>
+                        <tr>
+                            <td>充電方式</td>
+                            <td>太陽能充電</td>
+                        </tr>
+                        <tr>
+                            <td>保養期限</td>
+                            <td>6個月 (泵油除外，不包括人为損壞)</td>
+                        </tr>
+                    </table>
                     <h2>產品特點</h2>
                     <ul>
                         <li><strong>高效低碳：</strong>新一代汽車級高壓永磁同步電驅動，強制水冷待機攪拌液力驅動，滿載行駛及尾板起過雙20，性能超越油車，低噪音低排放。</li>
