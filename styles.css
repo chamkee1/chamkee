@@ -458,3 +458,10 @@ form input[type="submit"]:hover {
     font-size: 2em;
     color: #333;
 }
+.product-item img {
+    width: auto; /* 保持原始宽度 */
+    max-height: 200px; /* 设置最大高度 */
+    display: block;
+    margin: 0 auto;
+}
+
