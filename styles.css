@@ -30,7 +30,6 @@ header {
 .logo img {
     height: 50px;
     margin-right: 20px;
-    width: 150%;
 }
 
 .company-info {
@@ -40,7 +39,6 @@ header {
 .company-info h1 {
     margin: 0;
     font-size: 1.5em;
-    width: 400%;
 }
 
 .company-info h2 {
@@ -53,7 +51,6 @@ header {
     margin: 5px 0 0;
     font-size: 1em;
     color: #666;
-    width: 400%;
 }
 
 nav ul {
@@ -87,7 +84,7 @@ nav ul li a:hover {
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px; /* Minimum width for dropdown content */
+    min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -105,13 +102,13 @@ nav ul li a:hover {
 }
 
 main {
-    padding-top: 80px; /* Adjusted to account for fixed header */
+    padding-top: 80px;
 }
 
 section {
     padding: 50px;
-    margin: 0px auto;
-    max-width: 10000px;
+    margin: 0 auto;
+    max-width: 1200px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -124,31 +121,31 @@ section img {
 }
 
 .light-green-bg {
-    background-image: url('image/綠沙背.png'); /* Set background image */
-    background-size: cover; /* Ensure the background covers the entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-image: url('image/綠沙背.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .light-green-bg-2 {
-    background-image: url('image/綠沙背2.png'); /* Set background image */
-    background-size: cover; /* Ensure the background covers the entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-image: url('image/綠沙背2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-bg {
-    background-image: url('image/背景3.png'); /* Set background image */
-    background-size: cover; /* Ensure the background covers the entire section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-image: url('image/背景3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .contact-title {
     font-style: italic;
-    font-size: 2.5em; /* Adjust font size as needed */
+    font-size: 2.5em;
     text-align: center;
-    color: white; /* Ensure title is visible on background */
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -161,10 +158,10 @@ section img {
 
 .contact-info {
     max-width: 30%;
-    background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
-    padding: 20px; /* Add padding to ensure text is not touching edges */
-    border-radius: 10px; /* Add border radius for smoother edges */
-    color: white; /* Ensure text is visible on background */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 .contact-form-map {
@@ -178,10 +175,10 @@ section img {
     max-width: 45%;
     flex-grow: 1;
     margin-right: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
-    padding: 20px; /* Add padding to ensure text is not touching edges */
-    border-radius: 10px; /* Add border radius for smoother edges */
-    color: white; /* Ensure text is visible on background */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 .map-container {
@@ -194,7 +191,7 @@ section img {
     font-size: 2em;
     text-align: left;
     margin-bottom: 20px;
-    padding-left: 0px; /* Add padding to ensure alignment */
+    padding-left: 0px;
 }
 
 .scope-title {
@@ -202,7 +199,7 @@ section img {
     font-size: 2em;
     text-align: left;
     margin-bottom: 20px;
-    padding-left: 0px; /* Add padding to ensure alignment */
+    padding-left: 0px;
 }
 
 .mission-title {
@@ -210,7 +207,7 @@ section img {
     font-size: 2em;
     text-align: center;
     margin-bottom: 20px;
-    padding-left: 0px; /* Add padding to ensure alignment */
+    padding-left: 0px;
 }
 
 .about-content {
@@ -221,13 +218,13 @@ section img {
 .about-content img {
     max-width: 50%;
     margin-right: 20px;
-    margin-top: 0px; /* Move image up */
+    margin-top: 0px;
 }
 
 .about-text {
     max-width: 50%;
     position: relative;
-    font-size: 1.2em; /* Increase font size for text */
+    font-size: 1.2em;
 }
 
 .mission-content {
@@ -239,7 +236,7 @@ section img {
 
 .mission-item {
     max-width: 30%;
-    font-size: 1.2em; /* Increase font size for text */
+    font-size: 1.2em;
 }
 
 .mission-item img {
@@ -262,7 +259,7 @@ form {
 form label {
     margin-top: 10px;
     font-weight: bold;
-    color: white; /* Ensure label text is visible */
+    color: white;
 }
 
 form input, form textarea {
@@ -345,16 +342,16 @@ form input[type="submit"]:hover {
         margin-bottom: 20px;
     }
     .google-map {
-        width: 100%; /* Set the width to 100% */
-        height: 300px; /* Set a fixed height */
+        width: 100%;
+        height: 300px;
     }
 }
 
 .slideshow-container {
     position: relative;
-    max-width: 80%; /* Adjust the width to be smaller */
+    max-width: 80%;
     margin: auto;
-    border: none; /* Remove border */
+    border: none;
 }
 
 .mySlides {
@@ -363,8 +360,8 @@ form input[type="submit"]:hover {
 
 .slide-image {
     width: 100%;
-    height: 500px; /* Set a fixed height */
-    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    height: 500px;
+    object-fit: cover;
 }
 
 .fade {
@@ -413,23 +410,23 @@ form input[type="submit"]:hover {
 }
 
 .product-item {
-    flex-basis: 45%; /* Each item will take roughly 45% of the grid's width */
-    margin: 10px; /* Add some margin around the items */
-    text-align: center; /* Center-align the text and images */
-    border: 1px solid #ccc; /* Optional: adds a border around each product */
+    flex-basis: 22%; /* Keep the size similar to the original */
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
 .product-item img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
-    aspect-ratio: 16/9; /* Set a fixed aspect ratio */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
 .product-item p {
-    margin-top: 5px; /* Space between image and text */
-    font-size: 1em; /* Adjust font size as needed */
-    background: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background */
+    margin-top: 5px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.7);
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
