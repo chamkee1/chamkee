@@ -422,32 +422,13 @@ form input[type="submit"]:hover {
 
 .product-item img {
     width: 100%; /* Make the image fill the container */
-    height: 200px; /* Set a fixed height for uniformity */
+    height: 150px; /* Set a fixed height for uniformity */
     object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
 }
 
 .product-item p {
     margin-top: 5px; /* Space between image and text */
     font-size: 1em; /* Adjust font size as needed */
-}
-
-.product-item {
-    flex-basis: 30%;
-    margin: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-    position: relative; /* Required for overlay */
-}
-
-.product-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.product-item p {
-    margin-top: 5px;
-    font-size: 1em;
     background: rgba(255, 255, 255, 0.7); /* White semi-transparent background */
     padding: 5px;
     position: absolute;
