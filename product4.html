@@ -6,6 +6,10 @@
     <title>產品介紹 - 叉車</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        .product-details {
+            margin: 20px 0;
+        }
+
         .product-details h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
@@ -15,7 +19,6 @@
         .product-details p {
             font-size: 1.2em;
             line-height: 1.6;
-            margin-bottom: 20px;
             color: #555;
         }
 
@@ -37,6 +40,51 @@
 
         .product-details a:hover {
             text-decoration: underline;
+        }
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .product-table th, .product-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .product-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .feature-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .feature-box h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature-box p, .feature-box ul {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .feature-box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .feature-box ul li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -79,12 +127,52 @@
                 <div class="product-details">
                     <h2>基本信息</h2>
                     <p>我們公司在香港代理三一集團的叉車，這些叉車具有高效、可靠、耐用的特點，專為提升和搬運重物設計，適用於各種倉庫和工業場景。</p>
-                    <h2>產品特點</h2>
-                    <ul>
-                        <li><strong>高效低碳：</strong>新一代汽車級高壓永磁同步電驅動，強制水冷待機攪拌液力驅動，滿載行駛及尾板起過雙20，性能超越油車，低噪音低排放。</li>
-                        <li><strong>好用省錢：</strong>新一代整車控制架構，與新能源汽車同等異力控制器，菱形級防速度，層準性的控制帶來極佳的操控體驗。已批量應用于陶瓷、鋼鐵、紙業、板材等重工況行業，久經市場考驗。高壓恒磁同步電機與高效電控的黃金動力組合，效率更高，能耗更低。</li>
-                        <li><strong>智能安全：</strong>叉車實時在線，故障遠程監控並診斷。可在三一叉車數智化平台進行智能化管理，可配駕駛員身份識別及DMS監控系統，360影像，AI視覺輔助，全方位保障駕駛安全。采用車規級安全標準，所有高壓連接件均IP67防護，實時檢測測繞鏈條張緊，遠超普通車安全要求。</li>
-                    </ul>
+                    
+                    <table class="product-table">
+                        <tr>
+                            <th>項目</th>
+                            <th>參數</th>
+                        </tr>
+                        <tr>
+                            <td>容量（立方米）</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>電池種類</td>
+                            <td>比亞迪刀片電池</td>
+                        </tr>
+                        <tr>
+                            <td>充電方式</td>
+                            <td>太陽能充電</td>
+                        </tr>
+                        <tr>
+                            <td>保養期限</td>
+                            <td>6個月（泵油除外，不包括人为損壞）</td>
+                        </tr>
+                    </table>
+
+                    <div class="feature-box">
+                        <h3>節能環保</h3>
+                        <p>採用太陽能充電技術，減少碳排放，助力城市環保目標的實現。</p>
+                        <p>備用220V市電充電介面，保證持續運行。</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>高效運行</h3>
+                        <p>配備比亞迪刀片電池，提供強大且持久的電力支援，確保穩定運行。</p>
+                        <p>保養期內包打牛油及清斗頭垃圾，減少維護成本。</p>
+                    </div>
+
+                    <div class="feature-box">
+                        <h3>主要技術特點</h3>
+                        <ul>
+                            <li>採用最先進微電腦控制器，微電腦控制器直接連接電磁閥無需連接繼電器，具有故障的自動報警和自動診斷功能。</li>
+                            <li>液壓系統保護：當液壓系統油溫較高時，啟動冷卻系統，直到油溫降低到合適的溫度55℃以下。</li>
+                            <li>系統自動壓縮垃圾，當裝載到一定密度、壓滿時，系統自動提示；具有緊急停止控制功能。</li>
+                            <li>可實現自動壓縮循環，當按下壓縮循環按鈕，推頭可在壓縮倉內自動壓縮垃圾。具有壓縮頭處于任何位置時強行退回初始工作位的功能。</li>
+                        </ul>
+                    </div>
+                    
                     <p>詳細介紹和更多技術特點請參見完整的<a href="SCPC6画册设计稿Ver4.1(压缩版本）.pdf">產品手冊</a>。</p>
                 </div>
             </div>
