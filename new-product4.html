@@ -12,17 +12,18 @@
             color: #333;
         }
 
-        .product-details p, .product-details ul li {
+        .product-details p {
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
-            color: #000;
+            color: #555;
         }
 
         .product-details ul {
             list-style-type: disc;
             padding-left: 20px;
-            color: #000;
+            font-size: 1.2em;
+            color: #555;
         }
 
         .product-details ul li {
@@ -38,17 +39,21 @@
             text-decoration: underline;
         }
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
             margin-bottom: 20px;
         }
 
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            margin: 0 10px;
+        .info-table th, .info-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        .info-table th {
+            background-color: #f4f4f4;
         }
     </style>
 </head>
@@ -74,7 +79,7 @@
                         <div class="dropdown-content">
                             <a href="traditional-products.html">傳統產品</a>
                             <a href="new-energy.html">新能源科技</a>
-                            <a href="accessories.html">車輛配件</a>
+                            <a href="vehicle-accessories.html">車輛配件</a>
                         </div>
                     </li>
                 </ul>
@@ -83,15 +88,19 @@
     </header>
     <main>
         <section class="light-green-bg-2">
-            <div class="image-container">
-                <img src="image/濕電斗.png" alt="濕電斗">
-                <img src="image/濕電斗2.png" alt="濕電斗2">
-            </div>
             <h1>18立方移動式濕垃圾壓縮箱技術參數及產品說明</h1>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="image/濕電斗.png" alt="濕垃圾壓縮箱">
+                </div>
+                <div class="product-item">
+                    <img src="image/濕電斗2.png" alt="濕垃圾壓縮箱">
+                </div>
+            </div>
             <div class="product-details">
                 <h2>基本信息</h2>
                 <p>湛記機械工程(香港)有限公司提供的18立方移動式濕垃圾壓縮箱是一款針對濕垃圾處理的高效專業設備。該壓縮箱採用了先進的技術和優質的材料，適用於各種大型垃圾處理場所，確保了其耐用性和可靠性。以下是詳細的技術參數及產品說明：</p>
-                
+
                 <h2>主要技術參數</h2>
                 <table class="info-table">
                     <tr>
@@ -115,8 +124,8 @@
                         <td>18 m³</td>
                     </tr>
                     <tr>
-                        <td><strong>有效裝載容積</strong></td>
-                        <td><strong>約14 m³</strong></td>
+                        <td>有效裝載容積</td>
+                        <td>約14 m³</td>
                     </tr>
                     <tr>
                         <td>自重</td>
@@ -195,6 +204,7 @@
                     <li><strong>可擴展性：</strong> 支持模塊化設計，通過添加擴展模塊來增加功能，如I/O模塊、通信模塊等。</li>
                     <li><strong>高效控制：</strong> 實時處理速度快，適合需要高響應速度的控制應用。</li>
                 </ul>
+                <p>在18立方移動式濕垃圾壓縮箱中，PLC控制系統能夠提供智能操作、自我診斷、一鍵式啟動等功能，提高設備運行的可靠性和效率。</p>
 
                 <h2>結論</h2>
                 <p>18立方移動式濕垃圾壓縮箱以其卓越的技術性能和可靠的設計，成為城市環保和垃圾處理的不二之選。該設備能有效提高垃圾處理效率，降低運營成本，並確保環境清潔，是現代化垃圾處理的理想設備。</p>
@@ -202,7 +212,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 湛記機械工程(香港)有限公司. 保留所有權利 | <a href="privacy.html">隱私條款</a></p>
+        <p>&copy; 2024 湛記機械工程(香港)有限公司. 保留所有權利 <a href="privacy.html">隱私條款</a></p>
     </footer>
 </body>
 </html>
