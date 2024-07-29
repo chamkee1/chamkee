@@ -12,18 +12,17 @@
             color: #333;
         }
 
-        .product-details p {
+        .product-details p, .product-details ul li {
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
-            color: #555;
+            color: #000;
         }
 
         .product-details ul {
             list-style-type: disc;
             padding-left: 20px;
-            font-size: 1.2em;
-            color: #555;
+            color: #000;
         }
 
         .product-details ul li {
@@ -39,32 +38,17 @@
             text-decoration: underline;
         }
 
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
         }
 
-        .info-table th, .info-table td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        .info-table th {
-            background-color: #f2f2f2;
-            font-weight: bold;
-        }
-
-        .info-table td {
-            background-color: #fff;
-        }
-
-        .product-item img {
-            width: auto; /* 保持原始宽度 */
-            max-height: 200px; /* 设置最大高度 */
-            display: block;
-            margin: 0 auto;
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -90,7 +74,7 @@
                         <div class="dropdown-content">
                             <a href="traditional-products.html">傳統產品</a>
                             <a href="new-energy.html">新能源科技</a>
-                            <a href="vehicle-accessories.html">車輛配件</a> <!-- 新增的車輛配件选项 -->
+                            <a href="accessories.html">車輛配件</a>
                         </div>
                     </li>
                 </ul>
@@ -99,9 +83,15 @@
     </header>
     <main>
         <section class="light-green-bg-2">
+            <div class="image-container">
+                <img src="image/濕電斗.png" alt="濕電斗">
+                <img src="image/濕電斗2.png" alt="濕電斗2">
+            </div>
             <h1>18立方移動式濕垃圾壓縮箱技術參數及產品說明</h1>
             <div class="product-details">
+                <h2>基本信息</h2>
                 <p>湛記機械工程(香港)有限公司提供的18立方移動式濕垃圾壓縮箱是一款針對濕垃圾處理的高效專業設備。該壓縮箱採用了先進的技術和優質的材料，適用於各種大型垃圾處理場所，確保了其耐用性和可靠性。以下是詳細的技術參數及產品說明：</p>
+                
                 <h2>主要技術參數</h2>
                 <table class="info-table">
                     <tr>
@@ -125,8 +115,8 @@
                         <td>18 m³</td>
                     </tr>
                     <tr>
-                        <td>有效裝載容積</td>
-                        <td>約14 m³</td>
+                        <td><strong>有效裝載容積</strong></td>
+                        <td><strong>約14 m³</strong></td>
                     </tr>
                     <tr>
                         <td>自重</td>
@@ -181,6 +171,7 @@
                         <td>箱體電控部分配有4.3寸液晶屏，使用箱體面板按鈕和無線遙控器控制壓縮箱工作</td>
                     </tr>
                 </table>
+
                 <h2>主要技術特點</h2>
                 <ul>
                     <li><strong>適配車輛：</strong> 該壓縮箱設計適配總品質25噸及以上的車廂可卸式垃圾車，滿足各種大規模垃圾處理需求。</li>
@@ -194,6 +185,7 @@
                     <li><strong>駕駛室操作：</strong> 後門的啟閉、鎖緊及垃圾傾卸可在駕駛室內完成，操作簡便。</li>
                     <li><strong>智慧操作：</strong> 採用PLC控制，具備運行自我診斷功能，實現一鍵式啟動智慧操作，確保設備運行的可靠性和穩定性。</li>
                 </ul>
+
                 <h2>PLC控制系統</h2>
                 <p>PLC（可編程邏輯控制器）是一種專用於工業環境的數字計算操作電子系統，設計用於數據處理、監控和控制機械或工廠中的各種自動化過程。其主要特點包括：</p>
                 <ul>
@@ -203,15 +195,14 @@
                     <li><strong>可擴展性：</strong> 支持模塊化設計，通過添加擴展模塊來增加功能，如I/O模塊、通信模塊等。</li>
                     <li><strong>高效控制：</strong> 實時處理速度快，適合需要高響應速度的控制應用。</li>
                 </ul>
-                <p>在18立方移動式濕垃圾壓縮箱中，PLC控制系統能夠提供智能操作、自我診斷、一鍵式啟動等功能，提高設備運行的可靠性和效率。</p>
+
                 <h2>結論</h2>
                 <p>18立方移動式濕垃圾壓縮箱以其卓越的技術性能和可靠的設計，成為城市環保和垃圾處理的不二之選。該設備能有效提高垃圾處理效率，降低運營成本，並確保環境清潔，是現代化垃圾處理的理想設備。</p>
             </div>
         </section>
     </main>
     <footer>
-        <p><a href="privacy.html">隐私條款</a></p>
-        <p>© 2024 港記機械工程(香港)有限公司. 保留所有權利</p>
+        <p>&copy; 2024 湛記機械工程(香港)有限公司. 保留所有權利 | <a href="privacy.html">隱私條款</a></p>
     </footer>
 </body>
 </html>
