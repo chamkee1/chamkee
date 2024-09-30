@@ -23,6 +23,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: white; /* 白色背景 */
         }
 
         .product-details table, .product-details th, .product-details td {
@@ -32,6 +33,21 @@
 
         .product-details th {
             background-color: #f2f2f2;
+            width: 30%; /* 調整左邊欄寬 */
+        }
+
+        .product-details td {
+            width: 70%; /* 調整右邊欄寬 */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 32%; /* 調整圖片大小 */
         }
     </style>
 </head>
@@ -57,7 +73,7 @@
                         <div class="dropdown-content">
                             <a href="traditional-products.html">傳統產品</a>
                             <a href="new-energy.html">新能源科技</a>
-                            <a href="product6.html">上裝參數</a>
+                            <a href="product6.html">掃街車</a>
                         </div>
                     </li>
                 </ul>
@@ -67,6 +83,14 @@
     <main>
         <section class="light-green-bg-2">
             <h1>掃街車</h1>
+
+            <!-- 添加圖片 -->
+            <div class="image-container">
+                <img src="image/掃街車1.png" alt="掃街車1">
+                <img src="image/掃街車2.png" alt="掃街車2">
+                <img src="image/掃街車3.png" alt="掃街車3">
+            </div>
+
             <div class="product-details">
                 <h2>技術參數</h2>
                 <table>
@@ -132,6 +156,7 @@
     </main>
     <footer>
         <p>&copy; 2024 湛記機械工程(香港)有限公司. 保留所有權利</p>
+        <a href="privacy.html">隱私條款</a>
     </footer>
 </body>
 </html>
